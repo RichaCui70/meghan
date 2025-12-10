@@ -1,0 +1,51 @@
+.bouncing-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.arrow-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--foreground);
+    animation: bounce 2s ease-in-out infinite;
+    transition: color 0.3s ease;
+}
+
+.arrow-button:hover {
+    color: var(--secondary);
+}
+
+.bouncing-arrow-container > .hover-text {
+    position: absolute;
+    top: 35px;
+    color: var(--foreground);
+    font-size: 14px;
+    white-space: nowrap;
+    animation: fadeIn 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

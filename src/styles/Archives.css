@@ -1,0 +1,92 @@
+.archives-section {
+    min-height: 100vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+    position: relative;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 2px solid var(--foreground);
+    color: var(--foreground);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.back-button:hover {
+    background: var(--foreground);
+    color: var(--background);
+    transform: translateX(-5px);
+}
+
+.archives-title {
+    font-size: 48px;
+    margin: 0 0 60px 0;
+    color: var(--foreground);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Envelopes Grid */
+.envelopes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    width: 75vw;
+}
+
+/* Envelope Item Container */
+.envelope-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .envelopes-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .archives-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .archives-section {
+        padding: 40px 20px;
+    }
+
+    .back-button {
+        top: 20px;
+        left: 20px;
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .back-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}

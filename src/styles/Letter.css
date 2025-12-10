@@ -1,0 +1,229 @@
+.letter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Letter Container */
+.letter-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Letter Wrapper */
+.letter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Letter Page Specific Modal Animation */
+.modal-content.fly-to-archive {
+    animation: flyToArchive 1s ease forwards;
+}
+
+@keyframes flyToArchive {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(-50vw + 80px), calc(-50vh + 80px)) scale(0.1)
+            rotate(15deg);
+        opacity: 0;
+    }
+}
+
+/* Call Buttons */
+.call-buttons {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.call-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.call-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.call-button:active {
+    transform: scale(0.95);
+}
+
+.call-button svg {
+    width: 35px;
+    height: 35px;
+}
+
+/* Answer Button - Bright Green */
+.call-button.answer {
+    background: #22c55e;
+    color: white;
+}
+
+.call-button.answer:hover {
+    background: #16a34a;
+}
+
+/* Decline Button - Bright Red */
+.call-button.decline {
+    background: #ef4444;
+    color: white;
+}
+
+.call-button.decline:hover {
+    background: #dc2626;
+}
+
+.call-button.decline svg {
+    transform: rotate(135deg);
+}
+
+.hover-text {
+    position: absolute;
+    color: var(--foreground);
+    font-size: 16px;
+    white-space: nowrap;
+    animation: fadeInText 0.4s ease-in-out;
+    pointer-events: none;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Archive Box */
+.archive-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.archive-box:hover {
+    transform: scale(1.2);
+}
+
+.archive-box svg {
+    width: 50px;
+    height: 50px;
+    color: #faf8f5;
+}
+
+.archive-box.absorb {
+    animation: boxAbsorb 0.5s ease 0.5s;
+}
+
+@keyframes boxAbsorb {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Final Message */
+.final-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    animation: fadeInMessage 0.8s ease;
+}
+
+.final-message h1 {
+    font-size: 64px;
+    margin: 0;
+    color: var(--foreground);
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Replay Button */
+.replay-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: var(--foreground);
+    color: var(--background);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.replay-button:hover {
+    transform: scale(1.1) rotate(360deg);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.replay-button:active {
+    transform: scale(0.95);
+}
+
+.replay-button svg {
+    width: 40px;
+    height: 40px;
+}
+
+.replay-text {
+    font-size: 18px;
+    color: var(--foreground);
+    margin: 0;
+    opacity: 0.8;
+}

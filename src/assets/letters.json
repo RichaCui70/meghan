@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Third Year Anniversary",
+        "date": "2025-12-10",
+        "body": [
+            { "id": "1", "text": "We've hit three years together!!!! I'm hungry right now so all I'm thinking about is the Brock House. But anyways, since my letters are virtual, we can make a website that is like an archive of all letters. So an letters given can but annotated onto this website. The only bad thing so far about the website is that when writing out the letter, your entire letter is written on one line. In hindsight I shouldn't have done that but whatever. Ok anyways, I love you lots and lots! I love being around you and I love napping with you! I'm also incredibly proud of you and all of your work. You go through lots of adversity and yet you always have a smile on your face. You're a great Genesis exec and a great microbiologist. You're loved by many and many and that includes me! (I'm number one!)." },
+            { "id": "2", "text": "Again, I love you lots. This letter may not be that good as I'm incredibly hungry and it's 3:11am. But luckily, we have an archive now!"}
+        ],
+        "valediction": "I love you!",
+        "author": "Richard"
+    }
+]
