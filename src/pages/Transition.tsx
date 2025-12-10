@@ -66,7 +66,7 @@ export default function Transition() {
                                         className="photocard"
                                     >
                                         <img
-                                            src={`/src/assets/photos/${photo}`}
+                                            src={`images/${photo}`}
                                             alt={`Photo ${index + 1}`}
                                             className="photocard-image"
                                         />
@@ -93,7 +93,7 @@ export default function Transition() {
                                         className="photocard"
                                     >
                                         <img
-                                            src={`/src/assets/photos/${photo}`}
+                                            src={`images/${photo}`}
                                             alt={`Photo ${index + 1}`}
                                             className="photocard-image"
                                         />
@@ -120,7 +120,7 @@ export default function Transition() {
                                         className="photocard"
                                     >
                                         <img
-                                            src={`/src/assets/photos/${photo}`}
+                                            src={`images/${photo}`}
                                             alt={`Photo ${index + 1}`}
                                             className="photocard-image"
                                         />

@@ -10,7 +10,7 @@ const getRandomPhotos = (count: number = 10) => {
     const shuffled = [...allPhotos].sort(() => Math.random() - 0.5)
     return shuffled.slice(0, count).map((photo, index) => ({
         id: index,
-        image: `/src/assets/photos/${photo}`
+        image: `images/${photo}`
     }))
 }
 
