@@ -9,5 +9,19 @@
         ],
         "valediction": "I love you!",
         "author": "Richard"
+    },
+    {
+        "id": 2,
+        "title": "Happy Valentine's Day",
+        "date": "2026-02-14",
+        "body": [
+            { "id": "1", "text": "I love you lots and lots! You're always the most funny and brave girl that I know, and I'm always happy to be around you! I always look forward to our hang outs and I admire all the hard work you put into your passions!" },
+            { "id": "2", "text": "Crazy how this is our 4th Valentine's Day together and I'm excited for many more! Mwah!!!"}
+        ],
+        "valediction": "Hugs and Kisses!!!",
+        "author": "Richard"
     }
 ]
+
+
+
